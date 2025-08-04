@@ -4,5 +4,5 @@ package ra.session03_btvn.service;
 import ra.session03_btvn.entity.Admin;
 
 public interface AdminService {
-    Admin loginAdmin(String username, String password);
+    boolean loginAdmin(Admin admin);
 }

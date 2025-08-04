@@ -14,7 +14,11 @@ public class AdminServiceImp implements AdminService {
     }
 
     @Override
-    public Admin loginAdmin(String username, String password) {
-        return adminDAO.loginAdmin(username, password);
+    public boolean loginAdmin(Admin admin) {
+        admin = adminDAO.loginAdmin(admin.getUsername(),  admin.getPassword());
+        if(admin!=null){
+            return true;
+        }
+        return false;
     }
 }

@@ -8,6 +8,6 @@
 <h1><%= "Hello World!" %>
 </h1>
 <br/>
-<a href="/StudentController?action=findAll">Quan ly hoc sinh</a>
+<a href="/views/adminLogin.jsp">Quan ly hoc sinh</a>
 </body>
 </html>
